@@ -779,3 +779,19 @@ h2::before{
   background-color: #a6824b; /* Gold-brown highlight */
   border-radius: 4px;
 }
+
+
+.developer-credit {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.developer-credit a {
+  color: #5a4c36;
+  text-decoration: none;
+}
+
+.developer-credit a:hover {
+  color: #a6824b;
+}
