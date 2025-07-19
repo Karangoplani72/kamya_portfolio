@@ -79,34 +79,45 @@ nav {
    HERO SECTION
 ---------------------------- */
 .hero {
+  position: relative;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
+  justify-content: center;
   text-align: center;
   padding: 2rem;
+  overflow: hidden;
+  background-color: #fdf6ec;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  color: #2b3a42;
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures text stays above the image */
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  font-style: italic;
-  color: #4f4f4f;
+.feather-diagonal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180%;
+  height: auto;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  opacity: 0.08;
+  z-index: 0; /* Places it behind the text */
+  pointer-events: none;
+  object-fit: contain;
 }
 
 .ink-bg {
   position: absolute;
   width: 200px;
-  opacity: 0.1;
   bottom: 10px;
   right: 10px;
+  opacity: 0.1;
+  z-index: 1;
 }
+
+
 
 /* ---------------------------
    MEET KAMYA (ABOUT LONG)
@@ -348,6 +359,18 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.about-text,
+.about-img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-text.visible,
+.about-img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .about-img img {
   width: 100%;
@@ -372,6 +395,30 @@ nav {
     margin-bottom: 2rem;
   }
 }
+.about-text h2 {
+  font-size: 2.8rem;
+  color: #2c2c2c;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.about-text h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0.5rem auto 0;
+  background-color: #a6824b;
+  opacity: 0;
+  transition: opacity 0.6s ease, width 0.6s ease;
+}
+
+.about-text.visible h2::after {
+  opacity: 1;
+  width: 60px;
+}
+
 /* ---------------------------
    WRITING SAMPLES SECTION
 ---------------------------- */
