@@ -64,10 +64,9 @@ nav {
   color: #a6824b;
 }
 
-/* Responsive Nav */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Hide for now - can add hamburger later */
+    display: none;
   }
 
   .logo {
@@ -80,249 +79,247 @@ nav {
    HERO SECTION
 ---------------------------- */
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    padding: 2rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    color: #2b3a42;
+  font-size: 3rem;
+  color: #2b3a42;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    font-style: italic;
-    color: #4f4f4f;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #4f4f4f;
 }
 
 .ink-bg {
-    position: absolute;
-    width: 200px;
-    opacity: 0.1;
-    bottom: 10px;
-    right: 10px;
+  position: absolute;
+  width: 200px;
+  opacity: 0.1;
+  bottom: 10px;
+  right: 10px;
 }
 
 /* ---------------------------
    ABOUT ME (Short)
 ---------------------------- */
 .about {
-    background-color: #fffdf5;
-    padding: 4rem 2rem;
-    text-align: center;
+  background-color: #fffdf5;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #3d3d3d;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #3d3d3d;
 }
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    color: #4a4a4a;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #4a4a4a;
 }
 
 .about-icon {
-    width: 50px;
-    margin-bottom: 1rem;
-    opacity: 0.8;
+  width: 50px;
+  margin-bottom: 1rem;
+  opacity: 0.8;
 }
 
 /* ---------------------------
    PORTFOLIO SECTION
 ---------------------------- */
 .portfolio {
-    background-color: #f8f1e4;
-    padding: 4rem 2rem;
-    text-align: center;
+  background-color: #f8f1e4;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .portfolio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #3a3a3a;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #3a3a3a;
 }
 
 .work-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fffdf7;
-    border: 1px solid #e2d9cc;
-    border-radius: 12px;
-    margin: 1.5rem auto;
-    max-width: 750px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fffdf7;
+  border: 1px solid #e2d9cc;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  max-width: 750px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .work-card img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .work-info h3 {
-    color: #2d2d2d;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  color: #2d2d2d;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .work-info p {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.8rem;
 }
 
 .work-info a {
-    text-decoration: none;
-    color: #0645AD;
-    font-weight: 500;
-    margin: 0 0.5rem;
+  text-decoration: none;
+  color: #0645AD;
+  font-weight: 500;
+  margin: 0 0.5rem;
 }
 
 /* ---------------------------
    SERVICES SECTION
 ---------------------------- */
 .services {
-    background-color: #fdf8ef;
-    padding: 4rem 2rem;
-    text-align: center;
+  background-color: #fdf8ef;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 .services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .service-card {
-    background-color: #fffdf7;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    padding: 2rem 1.5rem;
-    max-width: 300px;
-    transition: transform 0.3s ease;
+  background-color: #fffdf7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem 1.5rem;
+  max-width: 300px;
+  transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .service-card img {
-    width: 60px;
-    margin-bottom: 1rem;
+  width: 60px;
+  margin-bottom: 1rem;
 }
 
 .service-card h3 {
-    color: #2d2d2d;
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
+  color: #2d2d2d;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .service-card p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* ---------------------------
    MEET KAMYA (ABOUT LONG)
 ---------------------------- */
 .about-section {
-    background-color: #fdf6ec;
-    padding: 4rem 2rem;
-    font-family: 'Georgia', serif;
+  background-color: #fdf6ec;
+  padding: 4rem 2rem;
+  font-family: 'Georgia', serif;
 }
 
 .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    align-items: center;
-    justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-text {
-    flex: 1;
-    min-width: 300px;
-    color: #2f2f2f;
+  flex: 1;
+  min-width: 300px;
+  color: #2f2f2f;
 }
 
 .about-text h2 {
-    font-size: 2.8rem;
-    margin-bottom: 1.2rem;
-    color: #2c2c2c;
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  color: #2c2c2c;
 }
 
 .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
 }
 
 .about-text .signature {
-    font-style: italic;
-    color: #555;
-    font-size: 1.1rem;
-    border-left: 3px solid #c9a137;
-    padding-left: 1rem;
-    margin-top: 1.8rem;
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+  border-left: 3px solid #c9a137;
+  padding-left: 1rem;
+  margin-top: 1.8rem;
 }
 
 .about-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-img img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    object-fit: cover;
+  width: 100%;
+  max-width: 480px;
+  height: 650px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
 }
 
-/* Responsive for About Section */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .about-text {
-        padding: 0 1rem;
-    }
+  .about-text {
+    padding: 0 1rem;
+  }
 
-    .about-img {
-        margin-bottom: 2rem;
-    }
+  .about-img {
+    margin-bottom: 2rem;
+  }
 }
-
 /* ---------------------------
    WRITING SAMPLES SECTION
 ---------------------------- */
