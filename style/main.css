@@ -7,9 +7,21 @@ body {
     background-color: #fdf6ec; /* Light cream */
     color: #2c2c2c;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /* ---------------------------
    NAVIGATION MENU
 ---------------------------- */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #fffdf7;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
 .navbar {
   background-color: #f8f0dc;
   padding: 1rem 2rem;
