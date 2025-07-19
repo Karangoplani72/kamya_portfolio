@@ -103,6 +103,18 @@ nav {
 .hero-content {
   position: relative;
 }
+.hero-content h1 {
+  font-size: 4rem; /* Increased from 3rem */
+  color: #2b3a42;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Increased from 1.2rem */
+  color: #4f4f4f;
+  font-style: italic;
+}
 
 
 .ink-bg {
@@ -728,4 +740,37 @@ nav {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+
+
+/* ---------------------------
+   GLOBAL HEADING BACKGROUND STYLES
+---------------------------- */
+h2 {
+  background-color: #f4e9d8; /* Light warm background */
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  color: #2c2c2c;
+  box-shadow: 0 3px 6px rgba(66, 42, 42, 0.05);
+  position: relative;
+}
+
+
+
+
+
+h2::before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 80%;
+  background-color: #a6824b; /* Gold-brown highlight */
+  border-radius: 4px;
 }
