@@ -177,14 +177,16 @@ nav {
 }
 
 .about-container {
-  max-width: 1200px;
+  padding: 0; /* No padding at all */
   margin: 0 auto;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   align-items: center;
   justify-content: center;
 }
+
 
 .about-text {
   flex: 1;
@@ -198,20 +200,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-.about-text h2 {
-  font-size: 2.6rem;
-  margin-bottom: 1.4rem;
-  color: #2c2c2c;
-  text-align: left;
-  padding-left: 1.2rem;
-  border-left: 4px solid #c9a137;
-  display: inline-block;
-  background-color: #fdf6ec;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease;
-}
+
 
 .about-text p {
   font-size: 1.1rem;
