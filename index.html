@@ -199,16 +199,14 @@
     <div class="container">
       <h2>Contact Me</h2>
       <p>Want to collaborate or just say hello? Send me a message!</p>
-      <form action="https://formsubmit.co/kamyagoplani99@gmail.com" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message ✉️</button>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="box">
-        <input type="hidden" name="_next" value="https://karangoplani72.github.io/kamya_portfolio/thanks.html">
-      </form>
+      <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="tel" id="phone" placeholder="Your Phone Number" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message ✉️</button>
+</form>
+
     </div>
   </section>
 
@@ -236,6 +234,29 @@
 
 
   <script src="script/main.js"></script>
+  <script>
+  function sendToWhatsApp(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappNumber = "917016287360";
+
+    const text =
+      `New Contact Message:%0A` +
+      `Name: ${name}%0A` +
+      `Phone: ${phone}%0A` +
+      `Email: ${email}%0A` +
+      `Message: ${message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+    window.open(url, "_blank");
+  }
+</script>
+
 </body>
 
 </html>
